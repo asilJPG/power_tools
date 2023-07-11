@@ -1,0 +1,8 @@
+{
+  "PORT": 3003,
+  "db_host": "localhost",
+  "db_username": "postgres",
+  "db_password": "asil18",
+  "db_port": 5432,
+  "db_name": "power_tools"
+}
