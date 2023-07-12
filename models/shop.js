@@ -1,7 +1,7 @@
 const sequelize = require("../config/db");
 
 const { DataTypes } = require("sequelize");
-
+const Shop_tool = require("./shop_tool");
 const Shop = sequelize.define("shop", {
   id: {
     type: DataTypes.INTEGER,
@@ -18,5 +18,5 @@ const Shop = sequelize.define("shop", {
     type: DataTypes.STRING,
   },
 });
-
+Shop_tool.belongsTo(Shop);
 module.exports = Shop;

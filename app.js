@@ -27,7 +27,7 @@ app.use(MainRouter());
 const start = async () => {
   try {
     await sequelize.authenticate();
-    await Client.sync({ alter: true }); //alter: true обновляет бд и применяет изменения автомотический
+    await sequelize.sync(); //alter: true обновляет бд и применяет изменения автомотический
     app.listen(port, () => {
       console.log(`server actinve in ${port} port`);
     });

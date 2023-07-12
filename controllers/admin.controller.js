@@ -1,4 +1,4 @@
-const Admin = require("../models/client");
+const Admin = require("../models/admin");
 const getAdmins = async (ctx) => {
   try {
     const admins = await Admin.findAll();

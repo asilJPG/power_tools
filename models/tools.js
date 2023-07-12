@@ -1,6 +1,7 @@
 const sequelize = require("../config/db");
 
 const { DataTypes } = require("sequelize");
+const Shop_tool = require("./shop_tool");
 
 const Tool = sequelize.define("tool", {
   id: {
@@ -12,5 +13,5 @@ const Tool = sequelize.define("tool", {
     type: DataTypes.STRING(50),
   },
 });
-
+Shop_tool.belongsTo(Tool);
 module.exports = Tool;
